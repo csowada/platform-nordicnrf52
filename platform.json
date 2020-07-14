@@ -10,12 +10,21 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/platformio/platform-nordicnrf52.git"
+    "url": "https://github.com/csowada/platform-nordicnrf52.git"
   },
   "version": "4.2.1",
   "packageRepositories": [
     "https://dl.bintray.com/platformio/dl-packages/manifest.json",
-    "http://dl.platformio.org/packages/manifest.json"
+    "http://dl.platformio.org/packages/manifest.json",
+    {
+      "framework-arduinonordicnrf52-zb-sdk": [
+        {
+          "url": "https://github.com/csowada/Adafruit_nRF52_Arduino/archive/master.zip",
+          "version": "9.9.1",
+          "system": "*"
+        }
+      ]
+    }
   ],
   "frameworks": {
     "arduino": {
@@ -40,6 +49,11 @@
       "type": "framework",
       "optional": true,
       "version": "~6.51401.0"
+    },
+    "framework-arduinonordicnrf52-zb-sdk": {
+      "type": "framework",
+      "optional": true,
+      "version": "~9.9.1"
     },
     "framework-arduinoadafruitnrf52": {
       "type": "framework",

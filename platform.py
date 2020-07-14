@@ -32,6 +32,11 @@ class Nordicnrf52Platform(PlatformBase):
                 self.board_config(board).get("upload.protocol", ""))
 
             if self.board_config(board).get("build.bsp.name",
+                                            "nrf5") == "zigbee-sdk":
+                self.frameworks['arduino'][
+                    'package'] = "framework-arduinonordicnrf52-zb-sdk"
+
+            if self.board_config(board).get("build.bsp.name",
                                             "nrf5") == "adafruit":
                 self.frameworks['arduino'][
                     'package'] = "framework-arduinoadafruitnrf52"

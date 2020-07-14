@@ -1,7 +1,7 @@
 {
   "build": {
     "arduino":{
-      "ldscript": "nrf52840_s140_v6.ld"
+      "ldscript": "blank_gcc_nrf52.ld"
     },
     "core": "nRF5",
     "cpu": "cortex-m4",
@@ -18,12 +18,6 @@
     "variant": "pca10056",
     "bsp": {
       "name": "zigbee-sdk"
-    },
-    "softdevice": {
-      "sd_flags": "-DS140",
-      "sd_name": "s140",
-      "sd_version": "6.1.1",
-      "sd_fwid": "0x00B6"
     },
     "bootloader": {
       "settings_addr": "0xFF000"

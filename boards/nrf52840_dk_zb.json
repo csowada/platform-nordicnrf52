@@ -1,11 +1,12 @@
 {
   "build": {
     "arduino":{
-      "ldscript": "blank_gcc_nrf52.ld"
+
+      "ldscript": "zigbee_light_bulb_gcc_nrf52.ld"
     },
     "core": "nRF5",
     "cpu": "cortex-m4",
-    "extra_flags": "-DARDUINO_NRF52840_PCA10056 -DNRF52840_XXAA",
+    "extra_flags": "-DARDUINO_NRF52840_PCA10056 -DNRF52840_XXAA -DBOARD_PCA10056",
     "f_cpu": "64000000L",
     "hwids": [
       [

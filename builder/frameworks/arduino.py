@@ -27,7 +27,7 @@ board = env.BoardConfig()
 
 
 if board.get("build.bsp.name", "nrf5") == "zigbee-sdk":
-    env.SConscript("arduino/nrf52-zb.py")
+    env.SConscript("nrf52-zb.py")
 elif board.get("build.bsp.name", "nrf5") == "adafruit":
     env.SConscript("arduino/adafruit.py")
 else:
